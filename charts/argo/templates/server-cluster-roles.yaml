@@ -63,6 +63,7 @@ rules:
   - workfloweventbindings
   - workflowtemplates
   - cronworkflows
+  - clusterworkflowtemplates
   verbs:
   - create
   - get
