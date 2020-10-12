@@ -31,7 +31,9 @@ spec:
               servicePort: {{ .servicePort }}
           {{- end }}
           {{- end }}
-          - backend:
+          - pathType: Prefix
+            path: "/"
+            backend:
               serviceName: {{ $serviceName }}
               servicePort: {{ $servicePort }}
     {{- end -}}
